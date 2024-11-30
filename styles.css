@@ -13,7 +13,8 @@ body {
 
 /* Header */
 header {
-    background-color: #000;
+    height: 80px;
+    background-color: #282828;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -34,9 +35,19 @@ header {
 
 .header-title {
     font-size: 1.8rem;
-    margin-right: 20px;
+   /* margin-right: 20px;*/
+    margin-right: 15.0rem;
     flex-grow: 1;
     text-align: right;
+}
+
+@media (max-width: 1024px) {
+    .header-title {
+    font-size: 1.2rem;
+    margin-right: 20px;
+    flex-grow: 1;
+    text-align: center;
+    }
 }
 
 /* Banner Section */
@@ -45,12 +56,24 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #282828;
+
 }
 
 .banner {
     width: 100%;
     height: auto;
 }
+
+@media (max-width: 768px) {
+    .banner-img {
+        width: 100%;
+        background-color: #282828;
+        margin-top: -1px;
+        content: url("assets/banner2.png");
+    }
+}
+
 
 /* Formulário Desktop */
 .form-container {
@@ -82,8 +105,22 @@ header {
     font-weight: bold;
 }
 
-.form-group input, .form-group select {
+.form-group input {
     width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group check {
+    width: 5px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -117,6 +154,7 @@ button[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    overflow-y: auto; /* Permitir scroll vertical no modal */
 }
 
 .modal.hidden {
@@ -132,7 +170,6 @@ button[type="submit"]:hover {
     max-width: 500px;
     color: #fff;
 }
-
 .modal-content h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
@@ -185,7 +222,7 @@ button[type="submit"]:hover {
 
 /* Footer */
 footer {
-    background-color: #000;
+    background-color: #282828;
     color: #fff;
     text-align: center;
     padding: 20px;

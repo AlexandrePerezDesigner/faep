@@ -35,16 +35,24 @@ function formatPhoneNumber(value) {
 document.getElementById("mobile-signup-btn").addEventListener("click", function () {
     const modal = document.getElementById("mobile-form-modal");
     modal.classList.remove("hidden"); // Mostra o modal do formulário
+    document.body.style.overflow = "hidden"; // Desativa o scroll da página principal
 });
 
 // Botão para fechar o modal no tablet e mobile
 document.getElementById("close-modal-btn").addEventListener("click", function () {
     const modal = document.getElementById("mobile-form-modal");
     modal.classList.add("hidden"); // Esconde o modal do formulário
+    document.body.style.overflow = "auto"; // Reativa o scroll da página principal
 });
 
 // Submissão do formulário no modal mobile
 document.getElementById("mobile-lead-form").addEventListener("submit", function (event) {
     event.preventDefault();
     alert("Formulário enviado com sucesso!");
+});
+
+// Permitir scroll vertical no modal
+document.getElementById("mobile-form-modal").addEventListener("scroll", function () {
+    const modalContent = document.querySelector(".modal-content");
+    modalContent.style.overflowY = "auto"; // Ativa o scroll interno do modal
 });
