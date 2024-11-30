@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page para a Faculdades Paulistanas">
+    <title>FAEP - Construa seu Futuro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="assets/logo-faep.png" alt="Logo FAEP" class="logo-header">
+            <h1 class="header-title">Descubra o Curso Ideal Para Você</h1>
+        </div>
+    </header>
+    <main>
+        <section class="banner-section">
+            <img src="assets/banner1.jpg" alt="Banner FAEP" class="banner">
+            <!-- Formulário Desktop -->
+            <div class="form-container" id="form-container">
+                <form id="lead-form">
+                    <h2>Inscreva-se Agora</h2>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone (com WhatsApp)</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 91234-5678" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="curso">Curso de Interesse</label>
+                        <select id="curso" name="curso" required>
+                            <option value="" disabled selected>Selecione um curso</option>
+                            <option value="curso1">Curso 1</option>
+                            <option value="curso2">Curso 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalidade">Modalidade de Ensino</label>
+                        <select id="modalidade" name="modalidade" required>
+                            <option value="" disabled selected>Selecione uma modalidade</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="semipresencial">Semipresencial</option>
+                            <option value="ead">EAD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="turno">Turno Preferido</label>
+                        <select id="turno" name="turno" required>
+                            <option value="" disabled selected>Selecione um turno</option>
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="localizacao">Cidade e Estado</label>
+                        <input type="text" id="localizacao" name="localizacao" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="canal">Como conheceu a faculdade?</label>
+                        <select id="canal" name="canal" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="indicacao">Indicação</option>
+                            <option value="redes-sociais">Redes Sociais</option>
+                            <option value="email">E-mail</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="indicacao">Indicado por (Nome e E-mail do Amigo)</label>
+                        <input type="text" id="indicacao" name="indicacao" placeholder="Opcional">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="lgpd" required>
+                            Autorizo o uso dos meus dados conforme a <a href="#">Política de Privacidade</a>.
+                        </label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <button class="mobile-button" id="mobile-signup-btn">INSCREVA-SE JÁ</button>
+        </section>
+        <!-- Modal do formulário no tablet e mobile -->
+        <div class="modal hidden" id="mobile-form-modal">
+            <div class="modal-content">
+                <form id="mobile-lead-form">
+                    <h2>Inscreva-se Agora</h2>
+                    <div class="form-group">
+                        <label for="nome-mobile">Nome Completo</label>
+                        <input type="text" id="nome-mobile" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-mobile">E-mail</label>
+                        <input type="email" id="email-mobile" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone-mobile">Telefone (com WhatsApp)</label>
+                        <input type="tel" id="telefone-mobile" name="telefone" placeholder="(11) 91234-5678" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="curso-mobile">Curso de Interesse</label>
+                        <select id="curso-mobile" name="curso" required>
+                            <option value="" disabled selected>Selecione um curso</option>
+                            <option value="curso1">Curso 1</option>
+                            <option value="curso2">Curso 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalidade-mobile">Modalidade de Ensino</label>
+                        <select id="modalidade-mobile" name="modalidade" required>
+                            <option value="" disabled selected>Selecione uma modalidade</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="semipresencial">Semipresencial</option>
+                            <option value="ead">EAD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="turno-mobile">Turno Preferido</label>
+                        <select id="turno-mobile" name="turno" required>
+                            <option value="" disabled selected>Selecione um turno</option>
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="localizacao-mobile">Cidade e Estado</label>
+                        <input type="text" id="localizacao-mobile" name="localizacao" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="canal-mobile">Como conheceu a faculdade?</label>
+                        <select id="canal-mobile" name="canal" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="indicacao">Indicação</option>
+                            <option value="redes-sociais">Redes Sociais</option>
+                            <option value="email">E-mail</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="indicacao-mobile">Indicado por (Nome e E-mail do Amigo)</label>
+                        <input type="text" id="indicacao-mobile" name="indicacao" placeholder="Opcional">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="lgpd" required>
+                            Autorizo o uso dos meus dados conforme a <a href="#">Política de Privacidade</a>.
+                        </label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <button type="button" class="close-btn" id="close-modal-btn">Fechar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="assets/selo.png" alt="Selo de Qualidade" class="footer-badge">
+            <img src="assets/qr.png" alt="QR Code para informações" class="footer-qr">
+            <img src="assets/logo-faep.png" alt="Logo FAEP" class="footer-logo">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
