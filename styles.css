@@ -229,7 +229,7 @@ button[type="submit"]:hover {
     font-weight: bold;
     cursor: pointer;
     position: absolute;
-    bottom: 24%;
+    bottom: 21%;
     /*right: 10%;*/
 
         width: 95%;
@@ -241,7 +241,7 @@ button[type="submit"]:hover {
 /* Footer */
 footer {
     background-color: #282828;
-    color: #fff;
+
     text-align: center;
     padding: 20px;
 }
@@ -261,7 +261,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
-    margin-top: 170px;
+    margin-top: 140px;
     gap: 20px;
     }
 }
@@ -272,7 +272,7 @@ footer {
 
 @media (max-width: 1024px) {
     .footer-badge, .footer-qr, .footer-logo  {
-        max-height: 80px;
+        max-height: 68px;
     }
 
 /* Responsividade */
