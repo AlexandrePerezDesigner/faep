@@ -124,6 +124,7 @@ button[type="submit"]:hover {
 }
 
 .modal-content {
+    margin-top: 230px;
     background: rgba(0, 0, 0, 0.9); /* Fundo preto com leve opacidade */
     padding: 20px;
     border-radius: 8px;
